@@ -1,0 +1,300 @@
+section {
+  h2 {
+    text-align: center;
+    background: $background-titulos;
+    color: $color-titulos;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: $font5;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    margin: 20px;
+  }
+}
+
+//TODO INICIO
+
+.trabajos {
+  padding: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h3 {
+    color: $color-subtitulos;
+    border: 2px solid #607d8b;
+    padding: 30px;
+    font-size: $font4;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  a {
+    color: $boton2;
+    border: 2px solid #607d8b;
+    padding: 20px;
+    font-size: $font3;
+    margin: 20px;
+    background: #3c525e;
+    border-radius: 8px;
+    border: $border-button1;
+    text-decoration: none;
+    transition: 0.5s;
+    box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      transform: scale(1.1);
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+//TODO NOSOTROS - SERVICIOS
+
+.section {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 50px;
+
+  .card {
+    border: $border-cards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 30px 50px;
+    border-radius: 10px;
+    background-color: $background-cards;
+  }
+
+  .card-img-top {
+    width: 50%;
+    margin: 20px 10px;
+  }
+
+  .card-title {
+    font-size: $font3;
+    font-weight: bold;
+  }
+
+  .card-text {
+    line-height: 1.5;
+    font-size: 2;
+  }
+}
+
+.img-card {
+  width: 450px;
+}
+
+.box {
+  border: $border-cards;
+  padding: 10px 0;
+  margin: 20px 0;
+  background: $background-cards;
+  border-radius: 10px;
+  box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.5);
+
+  h4 {
+    font-size: $font4;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 2;
+    font-size: $font1;
+  }
+}
+
+//TODO UBICACION
+
+.map-img {
+  width: 450px;
+  padding: 30px 0;
+}
+
+.ubicacion-text {
+  margin: auto;
+  padding: 30px;
+  background-color: $background-cards;
+  width: 350px;
+  border-radius: 10px;
+  border: $border-cards;
+  box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.5);
+
+  h4 {
+    font-size: $font3;
+  }
+
+  p {
+    font-size: $font2;
+  }
+}
+
+.map-img-ruta {
+  width: 150px;
+  padding: 20px;
+
+  &:hover {
+    transform: scale(1.2);
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+//TODO CONTACTO
+
+.formulario {
+  width: 500px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column;
+
+  label {
+    font-weight: bolder;
+    font-size: $font2;
+  }
+
+  input {
+    margin: 10px;
+  }
+  textarea {
+    margin: 10px;
+  }
+}
+
+.info {
+  background-color: $background-cards;
+  width: 450px;
+  margin: 50px auto;
+  border-radius: 10px;
+  border: $border-cards;
+  padding: 20px;
+  box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.5);
+
+  h4 {
+    font-size: $font3;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: $font2;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $font1;
+  }
+}
+
+.botones input {
+  margin: 10px 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 7px;
+  background: $background-buttons;
+  color: $boton1;
+  border: $border-button1;
+  box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background: $background-buttons2;
+    color: $boton2;
+    border: $border-button1;
+    transform: scale(1.1, 1.1);
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+/************************************************************************/
+//! INDEX
+//? CELULAR
+@media (min-width: 350px) and (max-width: 767px) {
+  .trabajos h3 {
+    font-size: $font3;
+  }
+
+  .trabajos a {
+    font-size: $font3;
+  }
+}
+
+//! NOSOTROS-SERVICIOS
+//? TABLET
+
+@media (max-width: 768px) {
+  .img-card {
+    width: 350px;
+  }
+}
+
+//? CELULAR
+
+@media (min-width: 350px) and (max-width: 767px) {
+  .box {
+    width: 90%;
+    margin: 20px auto;
+
+    ul {
+      margin: 10px;
+    }
+
+    h4 {
+      font-size: $font3;
+    }
+  }
+  .img-card {
+    width: 280px;
+  }
+}
+
+//! CONTACTO
+//? CELULAR
+
+@media (min-width: 350px) and (max-width: 767px) {
+  .formulario {
+    width: 90%;
+    margin: 20px 15px;
+  }
+
+  .info {
+    width: 330px;
+  }
+}
+
+//! UBICACION
+//? CELULAR
+@media (min-width: 350px) and (max-width: 767px) {
+  .ubicacion-text {
+    width: 320px;
+    margin: auto;
+  }
+
+  .map-img {
+    width: 320px;
+    margin: auto;
+  }
+}

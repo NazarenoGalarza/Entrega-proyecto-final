@@ -14,7 +14,7 @@ header h1 {
 }
 header .nav-link {
   color: black;
-  font-size: 24px;
+  font-size: 16px;
   transition: 0.1s;
   padding-left: 20px;
 }
@@ -102,7 +102,7 @@ footer .redes li {
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,12 +163,12 @@ section p {
   transform: scale(0.9);
 }
 
-.section {
+section {
   display: flex;
   flex-flow: column;
   margin-bottom: 50px;
 }
-.section .card {
+section .card {
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -179,17 +179,13 @@ section p {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.section .card-img-top {
+section .card-img-top {
   width: 50%;
   margin: 20px 10px;
 }
-.section .card-title {
+section .card-title {
   font-size: 32px;
   font-weight: bold;
-}
-.section .card-text {
-  line-height: 1.5;
-  font-size: 2;
 }
 
 .img-card {
@@ -213,6 +209,8 @@ section p {
   line-height: 1.5;
   font-size: 2;
   font-size: 16px;
+  text-align: center;
+  color: black;
 }
 
 .map-img {

@@ -62,7 +62,7 @@ section {
 
 //TODO NOSOTROS - SERVICIOS
 
-.section {
+section {
   display: flex;
   flex-flow: column;
   margin-bottom: 50px;
@@ -89,10 +89,6 @@ section {
     font-weight: bold;
   }
 
-  .card-text {
-    line-height: 1.5;
-    font-size: 2;
-  }
 }
 
 .img-card {
@@ -117,6 +113,8 @@ section {
     line-height: 1.5;
     font-size: 2;
     font-size: $font1;
+    text-align: center;
+    color: black;
   }
 }
 
